@@ -1,0 +1,68 @@
+# ── Python ────────────────────────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.pyd
+.Python
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# ── Virtual Environments ──────────────────────────────────────────────────────
+.venv/
+venv/
+ENV/
+env/
+
+# ── Environment & Secrets ─────────────────────────────────────────────────────
+.env
+*.env.local
+*.env.*.local
+# NOTE: .env.example is intentionally tracked (no secrets in it)
+
+# ── IDE & Editor ──────────────────────────────────────────────────────────────
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# ── Data & Models ─────────────────────────────────────────────────────────────
+# ChromaDB persisted vector store (large, local-only)
+data/chroma_db/
+
+# Evaluation results (auto-generated, excluded from commits)
+data/eval_results/
+
+# Downloaded model weights (if any local caching)
+models/
+*.bin
+*.safetensors
+*.gguf
+
+# ── Testing ───────────────────────────────────────────────────────────────────
+.pytest_cache/
+htmlcov/
+.coverage
+coverage.xml
+*.cover
+
+# ── Ruff / Mypy cache ─────────────────────────────────────────────────────────
+.ruff_cache/
+.mypy_cache/
+
+# ── Logs ──────────────────────────────────────────────────────────────────────
+*.log
+logs/
+
+# ── Misc ──────────────────────────────────────────────────────────────────────
+*.tmp
+*.bak
+.ipynb_checkpoints/
+scripts/
+tests/
+docs/
