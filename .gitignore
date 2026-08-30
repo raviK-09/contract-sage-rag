@@ -63,6 +63,4 @@ logs/
 *.tmp
 *.bak
 .ipynb_checkpoints/
-scripts/
-tests/
 docs/
